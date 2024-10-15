@@ -61,7 +61,7 @@
             <ImageView
                 android:layout_width="125dp"
                 android:layout_height="125dp"
-                android:src="@drawable/contacts_logo_remove"
+                android:src="@drawable/contacts_logo"
                 android:padding="16dp"
                 />
             <TextView
@@ -95,7 +95,7 @@
             <ImageView
                 android:layout_width="125dp"
                 android:layout_height="125dp"
-                android:src="@drawable/contacts_logo_remove"
+                android:src="@drawable/contacts_logo"
                 android:padding="16dp"
                 />
             <TextView

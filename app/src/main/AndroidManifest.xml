@@ -13,6 +13,9 @@
         android:theme="@style/Theme.AndroidBasics"
         tools:targetApi="31">
         <activity
+            android:name=".MenuBar"
+            android:exported="true" />
+        <activity
             android:name=".ImplicitIntend"
             android:exported="true" />
         <activity
