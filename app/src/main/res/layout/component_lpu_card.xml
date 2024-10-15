@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/department_card"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="0dp"
+    android:layout_height="120dp"
+    android:layout_margin="12dp"
+    android:backgroundTint="@color/offWhite"
+    android:layout_columnWeight="1"
+    app:cardCornerRadius="18dp"
+    android:outlineSpotShadowColor="@color/black"
+    >
+    <ImageButton
+        android:id="@+id/department_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/lpu_cse_logo"
+        android:padding="4dp"
+        android:clickable="true"
+        android:focusable="true"
+        />
+</androidx.cardview.widget.CardView>

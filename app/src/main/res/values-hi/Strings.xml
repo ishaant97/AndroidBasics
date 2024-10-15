@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroidBasics</string>
+    <string name="hindi">शिक्षा को सशक्त बनाना</string>
+    <string name="german">Bildung stärken</string>
+    <string name="nepali">शिक्षा सशक्तिकरण</string>
+    <string name="french">Autonomiser l’éducation</string>
+</resources>

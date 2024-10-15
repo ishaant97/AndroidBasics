@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_app_background"
+    android:orientation="vertical"
+    android:padding="16dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/android_logo" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="6"
+        >
+        <GridLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:columnCount="2"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:id="@+id/pizzaAppCard"
+                android:backgroundTint="@color/darkCard"
+                app:cardCornerRadius="24dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="16dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:fadingEdge="horizontal|vertical"
+                        android:padding="16dp"
+                        android:background="@drawable/flower_app_logo"
+                        android:layout_weight="1"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp"
+                        android:text="Pizza App"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:id="@+id/pizzaAppCard2"
+                android:backgroundTint="@color/darkCard"
+                app:cardCornerRadius="24dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="16dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView22"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:fadingEdge="horizontal|vertical"
+                        android:padding="16dp"
+                        android:background="@drawable/flower_app_logo"
+                        android:layout_weight="1"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp"
+                        android:text="Pizza App"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:id="@+id/pizzaAppCard2"
+                android:backgroundTint="@color/darkCard"
+                app:cardCornerRadius="24dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="16dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView22"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:fadingEdge="horizontal|vertical"
+                        android:padding="16dp"
+                        android:background="@drawable/flower_app_logo"
+                        android:layout_weight="1"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp"
+                        android:text="Pizza App"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:id="@+id/pizzaAppCard2"
+                android:backgroundTint="@color/darkCard"
+                app:cardCornerRadius="24dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="16dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView22"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:fadingEdge="horizontal|vertical"
+                        android:padding="16dp"
+                        android:background="@drawable/flower_app_logo"
+                        android:layout_weight="1"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp"
+                        android:text="Pizza App"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:id="@+id/pizzaAppCard2"
+                android:backgroundTint="@color/darkCard"
+                app:cardCornerRadius="24dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="16dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView22"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:fadingEdge="horizontal|vertical"
+                        android:padding="16dp"
+                        android:background="@drawable/flower_app_logo"
+                        android:layout_weight="1"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp"
+                        android:text="Pizza App"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:id="@+id/pizzaAppCard2"
+                android:backgroundTint="@color/darkCard"
+                app:cardCornerRadius="24dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="16dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView22"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:fadingEdge="horizontal|vertical"
+                        android:padding="16dp"
+                        android:background="@drawable/flower_app_logo"
+                        android:layout_weight="1"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp"
+                        android:text="Pizza App"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:id="@+id/pizzaAppCard2"
+                android:backgroundTint="@color/darkCard"
+                app:cardCornerRadius="24dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="16dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView22"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:fadingEdge="horizontal|vertical"
+                        android:padding="16dp"
+                        android:background="@drawable/flower_app_logo"
+                        android:layout_weight="1"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp"
+                        android:text="Pizza App"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+    </ScrollView>
+</LinearLayout>

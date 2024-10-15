@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/ca1_background"
+   >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:flow_verticalBias="1"
+        android:background="@drawable/lpu_logo"
+        android:id="@+id/logo"
+        />
+
+    <EditText
+        android:id="@+id/EditText"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter User Id"
+        android:inputType="text"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textColorHint="#898383"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        />
+    <Button
+        android:id="@+id/SignInbutton"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Sign In"
+        app:layout_constraintTop_toBottomOf="@+id/EditText"
+        android:backgroundTint="#FFA500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        app:layout_constraintTop_toBottomOf="@+id/SignInbutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/flower_app_background"
+    android:padding="16dp"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/flower_app_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="8dp"
+        />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="32sp"
+        android:text="Welcome to Flower Delivery"
+        android:textColor="@color/white"
+        app:layout_constraintVertical_bias="0.02"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_shape"
+        android:padding="8dp"
+        android:hint="Search for flowers 🔍"
+        android:inputType="text"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textColorHint="#898383"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView1"
+        app:layout_constraintVertical_bias="0.05"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"
+        android:inputType="text"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textColorHint="#898383"
+        app:layout_constraintTop_toBottomOf="@+id/searchBar"
+        app:layout_constraintBottom_toTopOf="@+id/loginButton"
+        app:layout_constraintVertical_bias="0.35"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your phone number"
+        android:inputType="text"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textColorHint="#898383"
+        app:layout_constraintTop_toBottomOf="@+id/searchBar"
+        app:layout_constraintBottom_toTopOf="@+id/loginButton"
+        app:layout_constraintVertical_bias="0.45"
+        />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="24sp"
+        android:text="Login"
+        />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
