@@ -13,8 +13,14 @@
         android:theme="@style/Theme.AndroidBasics"
         tools:targetApi="31">
         <activity
-            android:name=".Portfolio"
-            android:exported="false" />
+            android:name=".CA2"
+            android:exported="true" />
+        <!-- <activity -->
+        <!-- android:name=".AcademicsPage" -->
+        <!-- android:exported="true" /> -->
+        <activity
+            android:name=".portfolio.Portfolio"
+            android:exported="true" />
         <activity
             android:name=".MenuBar"
             android:exported="true" />
@@ -44,7 +50,7 @@
             android:exported="true" />
         <activity
             android:name=".TravelApp"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".flower_app.ConstrainLayout"
             android:exported="true" />

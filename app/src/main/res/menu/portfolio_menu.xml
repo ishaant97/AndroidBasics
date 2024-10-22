@@ -5,19 +5,18 @@
     <item
         android:title="email"
         android:id="@+id/emailItem"
-        android:icon="@drawable/contacts_logo"
-        app:showAsAction="always"
+        app:showAsAction="never"
         />
     <item
         android:title="contact"
         android:id="@+id/contactItem"
         android:icon="@drawable/contacts_logo"
-        app:showAsAction="always"
+        app:showAsAction="never"
         />
     <item
         android:title="feedback"
         android:id="@+id/feedbackItem"
         android:icon="@drawable/contacts_logo"
-        app:showAsAction="always"
+        app:showAsAction="never"
         />
 </menu>
