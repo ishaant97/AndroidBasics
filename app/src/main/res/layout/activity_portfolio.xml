@@ -1,81 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/portfolioMenubar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:title="Welcome Ishaant"
-        />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_weight="1"
-        >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Welcome Ishaant,"
-            android:textSize="36sp"
-            android:fontFamily="@font/flower_font"
-            />
-        <ImageButton
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/menu_icon_image"
-            android:scaleType="fitCenter"
-            android:layout_marginLeft="88dp"
-            android:clickable="true"
-            />
+        app:title="Welcome Ishaant" />
 
-    </LinearLayout>
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="1"-->
+<!--        android:gravity="center"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:fontFamily="@font/flower_font"-->
+<!--            android:text="Welcome Ishaant,"-->
+<!--            android:textSize="36sp" />-->
+
+<!--        <ImageButton-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_marginLeft="88dp"-->
+<!--            android:clickable="true"-->
+<!--            android:scaleType="fitCenter"-->
+<!--            android:src="@drawable/menu_icon_image" />-->
+
+<!--    </LinearLayout>-->
+
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:columnCount="2"
-        android:layout_weight="7"
-        android:padding="16dp"
         android:layout_margin="16dp"
+        android:layout_weight="7"
+        android:columnCount="2"
         android:gravity="center"
-        >
+        android:padding="16dp">
+
         <androidx.cardview.widget.CardView
             android:id="@+id/academicsCard"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
             android:layout_columnWeight="1"
+            android:layout_margin="16dp"
             android:clickable="true"
-            android:focusable="true"
-            >
+            android:focusable="true">
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
                 android:gravity="center"
-                >
+                android:orientation="vertical">
+
                 <ImageButton
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:src="@drawable/academics_logo"
                     android:layout_margin="8dp"
                     android:padding="16dp"
                     android:scaleType="fitCenter"
-                    />
+                    android:src="@drawable/academics_logo" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Academics"
-                    android:textSize="24sp"
-                    />
+                    android:textSize="24sp" />
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
@@ -83,166 +80,151 @@
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
             android:layout_columnWeight="1"
+            android:layout_margin="16dp"
             android:clickable="true"
-            android:focusable="true"
-            >
+            android:focusable="true">
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
                 android:gravity="center"
-                >
+                android:orientation="vertical">
+
                 <ImageButton
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:src="@drawable/certificates_logo"
                     android:layout_margin="8dp"
                     android:padding="16dp"
                     android:scaleType="fitCenter"
-                    />
+                    android:src="@drawable/certificates_logo" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Certificates"
-                    android:textSize="24sp"
-                    />
+                    android:textSize="24sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
-
 
 
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
             android:layout_columnWeight="1"
+            android:layout_margin="16dp"
             android:clickable="true"
-            android:focusable="true"
-            >
+            android:focusable="true">
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
                 android:gravity="center"
-                >
+                android:orientation="vertical">
 
                 <ImageButton
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:src="@drawable/project_logo"
                     android:layout_margin="8dp"
                     android:padding="16dp"
                     android:scaleType="fitCenter"
-                    />
+                    android:src="@drawable/project_logo" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Projects"
-                    android:textSize="24sp"
-                    />
+                    android:textSize="24sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
             android:layout_columnWeight="1"
+            android:layout_margin="16dp"
             android:clickable="true"
-            android:focusable="true"
-            >
+            android:focusable="true">
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
                 android:gravity="center"
-                >
+                android:orientation="vertical">
 
                 <ImageButton
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:src="@drawable/skills_icon"
                     android:layout_margin="8dp"
                     android:padding="16dp"
                     android:scaleType="fitCenter"
-                    />
+                    android:src="@drawable/skills_icon" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Skills"
-                    android:textSize="24sp"
-                    />
+                    android:textSize="24sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
             android:layout_columnWeight="1"
+            android:layout_margin="16dp"
             android:clickable="true"
-            android:focusable="true"
-            >
+            android:focusable="true">
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
                 android:gravity="center"
-                >
+                android:orientation="vertical">
 
                 <ImageButton
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:src="@drawable/gallery_icon"
                     android:layout_margin="8dp"
                     android:padding="16dp"
                     android:scaleType="fitCenter"
-                    />
+                    android:src="@drawable/gallery_icon" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Photo Gallery"
-                    android:textSize="24sp"
-                    />
+                    android:text="Gallery"
+                    android:textSize="24sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
             android:layout_columnWeight="1"
+            android:layout_margin="16dp"
             android:clickable="true"
-            android:focusable="true"
-            >
+            android:focusable="true">
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
                 android:gravity="center"
-                >
+                android:orientation="vertical">
 
                 <ImageButton
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:src="@drawable/hobbies_icon"
                     android:layout_margin="8dp"
                     android:padding="16dp"
                     android:scaleType="fitCenter"
-                    />
+                    android:src="@drawable/hobbies_icon" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Hobbies"
-                    android:textSize="24sp"
-                    />
+                    android:textSize="24sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 

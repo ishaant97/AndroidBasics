@@ -5,9 +5,6 @@
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="localizing_app">
-        <option name="selectionMode" value="DROPDOWN" />
-      </SelectionState>
       <SelectionState runConfigName="ImplicitIntend">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
@@ -16,8 +13,19 @@
       </SelectionState>
       <SelectionState runConfigName="Portfolio (1)">
         <option name="selectionMode" value="DROPDOWN" />
+        <DropdownSelection timestamp="2024-10-22T18:53:49.672342500Z">
+          <Target type="DEFAULT_BOOT">
+            <handle>
+              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\ishaa\.android\avd\Pixel_8_Pro_API_VanillaIceCream.avd" />
+            </handle>
+          </Target>
+        </DropdownSelection>
+        <DialogSelection />
       </SelectionState>
       <SelectionState runConfigName="CA2">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="Permissions">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>
