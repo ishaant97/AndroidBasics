@@ -15,6 +15,9 @@ class DialogBox : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_dialog_box)
         val exitButton = findViewById<Button>(R.id.exitButton)
+        val subscribeButton = findViewById<Button>(R.id.subscribeButton)
+
+
         exitButton.setOnClickListener {
             val b = AlertDialog.Builder(this)
             b.setTitle("Give Rating")
@@ -29,6 +32,9 @@ class DialogBox : AppCompatActivity() {
             val dialog = b.create()
             dialog.show()
         }
-    }
 
+        subscribeButton.setOnClickListener {
+            // here we will write the code for custom dialog box
+        }
+    }
 }
