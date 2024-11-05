@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="email"
+        android:id="@+id/emailItem"
+        app:showAsAction="never"
+        />
+    <item
+        android:title="contact"
+        android:id="@+id/contactItem"
+        android:icon="@drawable/contacts_logo"
+        app:showAsAction="never"
+        />
+    <item
+        android:title="feedback"
+        android:id="@+id/feedbackItem"
+        android:icon="@drawable/contacts_logo"
+        app:showAsAction="never"
+        />
+</menu>

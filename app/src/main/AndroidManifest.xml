@@ -19,6 +19,12 @@
         android:theme="@style/Theme.AndroidBasics"
         tools:targetApi="31">
         <activity
+            android:name=".dialogBox.DialogBox"
+            android:exported="true" />
+        <activity
+            android:name=".EduWaveClone"
+            android:exported="false" />
+        <activity
             android:name=".Permissions"
             android:exported="true" />
         <activity
@@ -76,6 +82,5 @@
             </intent-filter>
         </activity>
     </application>
-
 
 </manifest>
