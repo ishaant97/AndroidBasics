@@ -23,7 +23,7 @@
         android:id="@+id/subscribeButton"
         android:clickable="true"
         android:focusable="true"
-        android:text="Subscribe"
+        android:text="Subscribe (Custom Dialog Box)"
         android:textSize="24sp"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"

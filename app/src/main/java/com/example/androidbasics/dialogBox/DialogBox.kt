@@ -2,7 +2,9 @@ package com.example.androidbasics.dialogBox
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.widget.Button
+import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
@@ -35,6 +37,22 @@ class DialogBox : AppCompatActivity() {
 
         subscribeButton.setOnClickListener {
             // here we will write the code for custom dialog box
+            Toast.makeText(this,"Clicked",Toast.LENGTH_SHORT).show()
+            val b = LayoutInflater.from(this).inflate(R.layout.custom_dialog_box, null)
+            val dialog = AlertDialog.Builder(this).setView(b)
+            dialog.setPositiveButton("Subscribe") {dialog, _ ->
+                val editTextButton = b.findViewById<EditText>(R.id.editText)
+                val email = editTextButton.text.toString()
+                if(email.isNotBlank()){
+                    Toast.makeText(this, "Subscribed to $email", Toast.LENGTH_SHORT).show()
+                }
+                else {
+                    Toast.makeText(this, "Please enter your email", Toast.LENGTH_SHORT).show()
+                }
+                dialog.dismiss()
+            }
+            dialog.setNegativeButton("Cancel") {dialog, _ -> dialog.dismiss()}
+            dialog.create().show()
         }
     }
 }
