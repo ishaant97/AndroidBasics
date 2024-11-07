@@ -3,8 +3,10 @@ package com.example.androidbasics.dialogBox
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ListView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
@@ -18,6 +20,7 @@ class DialogBox : AppCompatActivity() {
         setContentView(R.layout.activity_dialog_box)
         val exitButton = findViewById<Button>(R.id.exitButton)
         val subscribeButton = findViewById<Button>(R.id.subscribeButton)
+        val languageButton = findViewById<Button>(R.id.languagesButton)
 
 
         exitButton.setOnClickListener {
@@ -52,6 +55,25 @@ class DialogBox : AppCompatActivity() {
                 dialog.dismiss()
             }
             dialog.setNegativeButton("Cancel") {dialog, _ -> dialog.dismiss()}
+            dialog.create().show()
+        }
+
+        languageButton.setOnClickListener {
+            //custom dialog box
+            val b = LayoutInflater.from(this).inflate(R.layout.languages_custom_dialog_box, null)
+            val dialog = AlertDialog.Builder(this).setView(b)
+
+            val languagesListView = b.findViewById<ListView>(R.id.languagesListView)
+
+            val items = listOf("English", "French", "Spanish", "German")
+
+            val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, items)
+            languagesListView.adapter = adapter
+
+            languagesListView.setOnItemClickListener { _, _, position, _ ->
+                val selectedItem = items[position]
+                Toast.makeText(this, "Selected language: $selectedItem", Toast.LENGTH_LONG).show()
+            }
             dialog.create().show()
         }
     }
